@@ -1,0 +1,9 @@
+<div>
+    <button (click)="tipoUsuario = 'administrador'">Administrador</button>
+    <button (click)="tipoUsuario = 'colaborador'">Colaborador</button>
+    <button (click)="tipoUsuario = 'usuario'">Usuário</button>
+  </div>
+  
+  <div *ngIf="tipoUsuario">
+    <p>{{ exibirConteudo() }}</p>
+  </div>
