@@ -10,12 +10,14 @@ import { ControleAcessoComponent } from './components/controle-acesso/controle-a
 import { ComponentePaiComponent } from './components/componente-pai/componente-pai.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
 import { AreaLogadaComponent } from './components/area-logada/area-logada.component';
+import { DadosAlunosComponent } from './components/dados-alunos/dados-alunos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, ContadorComponentComponent, ListItemsComponent,FormCadastroComponent, FormsModule,ControleAcessoComponent
-  ,FormLoginComponent, AreaLogadaComponent,ComponentePaiComponent],
+  ,FormLoginComponent, AreaLogadaComponent,ComponentePaiComponent, DadosAlunosComponent, HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
